@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to GitHub Pages [Image] (/images/p1.png)
 
 You can use the [editor on GitHub](https://github.com/Aiying0512/hello-world/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
