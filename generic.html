@@ -85,8 +85,8 @@
 									<p> <strong>Zhang, A.</strong>, Fang, J., Liang, F., Calhoun, V.D. and Wang, Y.P., 2018. <a href="https://ieeexplore.ieee.org/document/8408706"> Aberrant Brain Connectivity in Schizophrenia Detected via a Fast Gaussian Graphical Model. </a> IEEE journal of biomedical and health informatics, 23(4), pp.1479-1489. <a href="files/Appendix-JHBI.pdf">Appendix</a> </p>
 								</div>
 									   <!-- Expand/Collapse Button -->
-											    <button class="toggle-button" onclick="toggleVisibility()">Show More</button>
-											</section>
+										<button class="toggle-button" onclick="toggleVisibility()">Show More</button>
+								</section>
 											
 											<style>
 											    .hidden {
@@ -106,9 +106,35 @@
 											    }
 											
 											    .toggle-button:hover {
-											        background-color: #ffffff;
+											        background-color: #0056b3;
 											    }
 											</style>
+											    <script>
+											        // JavaScript for toggling visibility
+											
+											        function toggleVisibility() {
+											            const hiddenContent = document.getElementById('hiddenContent'); // Select the hidden content
+											            const button = document.querySelector('.toggle-button'); // Select the button
+											
+											            // Toggle visibility
+											            if (hiddenContent.style.display === 'none' || hiddenContent.classList.contains('hidden')) {
+											                hiddenContent.style.display = 'block'; // Show hidden content
+											                hiddenContent.classList.remove('hidden');
+											                button.textContent = 'Show Less'; // Update button text
+											            } else {
+											                hiddenContent.style.display = 'none'; // Hide the content
+											                hiddenContent.classList.add('hidden');
+											                button.textContent = 'Show More'; // Update button text
+											            }
+											        }
+											
+											        // Ensure the hidden content starts hidden
+											        document.addEventListener('DOMContentLoaded', () => {
+											            const hiddenContent = document.getElementById('hiddenContent');
+											            hiddenContent.style.display = 'none';
+											        });
+											    </script>
+											
 									
 
 									<hr class="major" />
