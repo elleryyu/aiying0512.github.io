@@ -10,32 +10,6 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<style>
-        .news-ticker {
-            width: 100%;
-            overflow: hidden;
-            background-color: #222;
-            color: white;
-            padding: 10px 0;
-            font-family: Arial, sans-serif;
-            position: relative;
-        }
-
-        .news-ticker span {
-            display: inline-block;
-            white-space: nowrap;
-            animation: ticker 15s linear infinite;
-        }
-
-        @keyframes ticker {
-            0% {
-                transform: translateX(100%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-    </style>
 	</head>
 	<body class="is-preload">
 
@@ -112,25 +86,7 @@
 									</div>
 								</section>
 
-								<section>
-
-									<div class="news-ticker" id="news-ticker">
-       									 <span id="news-content"></span>
-   									 </div>
-
-    									<script>
-       										 // Array of news items
-										        const newsItems = [
-										            "Breaking News: Our new product launch is set for December 15th!",
-										            "Annual conference registration is open now!",
-										            "System maintenance scheduled for November 30th from 1 AM to 5 AM."
-										        ];
-									
-									        // Combine news items into one rolling string
-									        const newsContent = newsItems.join(" | ");
-									        document.getElementById("news-content").textContent = newsContent;
-									    </script>
-								</section>
+			
 							
 							
   								 <!-- 	<section> 
