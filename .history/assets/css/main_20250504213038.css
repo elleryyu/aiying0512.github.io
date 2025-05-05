@@ -2290,14 +2290,6 @@ button,
   animation-play-state: paused; 
 }
 
-.carousel-track img {
-  flex: 0 0 auto;
-  width: auto;
-  height: 300px; 
-  object-fit: cover; 
-  margin-right: 10px;
-  border-radius: 8px; 
-}
 
 @keyframes scroll {
   0%   { transform: translateX(0); }
