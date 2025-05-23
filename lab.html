@@ -31,6 +31,56 @@
       0% { transform: translateX(0); }
       100% { transform: translateX(-50%); }
     }
+
+    .trainee-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem;
+    list-style: none;
+    padding: 0;
+    margin: 5.5rem auto 0;    /* ↑ add top margin */
+  }
+  .trainee-member {
+    text-align: center;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .member-photo {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    border-radius: 2px;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .news-container {
+      max-height: 300px;
+      overflow-y: auto; /* Enables vertical scrolling */
+      padding: 10px;
+      border: 1px solid #ddd;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+  }
+
+  .news-item {
+      margin-bottom: 15px;
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+  }
+
+  .news-item h4 {
+      margin: 0 0 5px;
+      font-size: 1.1em;
+      color: #333;
+  }
+
+  .news-item p {
+      margin: 0;
+      font-size: 0.9em;
+      color: #666;
+  }
+
   </style>
 </head>
 <body class="is-preload">
@@ -55,35 +105,72 @@
 
         <!-- Content -->
         <section>
-          <header class="main">
-            <h1>NeuroBioInformatics Lab</h1>
-            <p><strong>Welcome to NeuroBioinformatics Lab (NBIL)</strong></p>
-          </header>
 
-          <div class="carousel">
-            <div class="carousel-track">
-              <img src="images/BME40th.jpg" alt="Photo 1" />
-              <img src="images/crawfest2016.jpg" alt="Photo 2" />
-              <img src="images/suhren.jpg" alt="Photo 3" />
-            </div>
+
+          <hr class="major" />
+          <h2>Principal Investigator</h2>
+          <div class="pi-profile" style="text-align: center; margin: 2rem 0;">
+            <a href="authors/aiyingzhang.html" style="text-decoration: none; color: inherit;">
+              <img 
+                src="images/headshot_winter.jpeg" 
+                alt="Dr. Aiying Zhang" 
+                style="
+                  width: 200px; 
+                  height: 200px; 
+                  object-fit: cover; 
+                  border-radius: 50%; 
+                  display: block; 
+                  margin: 0 auto 1rem;
+                " 
+              />
+              <h3 style="font-size: 2rem; margin: 0;">Dr. Aiying Zhang</h3>
+            </a>
+            <p style="margin: 0.5rem 0; font-size: 1rem;">
+              Assistant Professor of Data Science, University of Virginia
+            </p>
+            <!-- <p style="margin-top: 1rem; font-size: 1rem;">
+              Learn more on the <a href="authors/aiyingzhang.html">Aiying Zhang profile page</a>.
+            </p> -->
           </div>
 
-
-          <hr class="major" />
-          <h2>Our Mission</h2>
-          <p>[Insert lab mission here]</p>
-
-          <hr class="major" />
-          <h2>Current Students</h2>
-          <p>[Insert lab members info]</p>
+          <h2>Trainee</h2>
+          <ul class="trainee-list">
+            <li class="trainee-member">
+              <!-- Replace src with actual photo URL -->
+              <img src="images/lab_members/hexin.jpg" alt="Photo of Xin He" class="member-photo" width="160" height="280" />
+              <p>Xin He (Undergraduate Student, Statistics, UVA)</p>
+            </li>
+            <li class="trainee-member">
+              <img src="path/to/ruoyun_li.jpg" alt="Photo of Ruoyun Li" class="member-photo" width="120" height="120" />
+              <p>Ruoyun Li (Incoming Graduate Student, Biostatistics, Yale)</p>
+            </li>
+            <li class="trainee-member">
+              <img src="path/to/jiajia_xu.jpg" alt="Photo of Jiajia Xu" class="member-photo" width="120" height="120" />
+              <p>Jiajia Xu (Incoming Graduate Student, Biostatistics, Yale)</p>
+            </li>
+            <li class="trainee-member">
+              <img src="path/to/dongyuan_mutu.jpg" alt="Photo of Dongyuan Mutu" class="member-photo" width="120" height="120" />
+              <p>Dongyuan Mutu (Affiliation)</p>
+            </li>
+            <li class="trainee-member">
+              <img src="path/to/kurt_ji.jpg" alt="Photo of Kurt Ji" class="member-photo" width="120" height="120" />
+              <p>Kurt Ji (MCS, UVA)</p>
+            </li>
+            <li class="trainee-member">
+              <img src="images/lab_members/ellery.jpg" alt="Photo of Weifeng Yu" class="member-photo" width="160" height="280" />
+              <p>Weifeng (Ellery) Yu (Research Assistant, UVA)</p>
+            </li>
+            <li class="trainee-member">
+              <img src="path/to/aroosha_solomon.jpg" alt="Photo of Aroosha Solomon" class="member-photo" width="120" height="120" />
+              <p>Aroosha Solomon (Undergraduate Student, Biology, UVA)</p>
+            </li>
+          </ul>
+          
 
           <hr class="major" />
           <h2>Alumni</h2>
           <p>[Insert alumni info]</p>
 
-          <hr class="major" />
-          <h2>News</h2>
-          <p>[Insert lab news]</p>
         </section>
       </div>
     </div>
@@ -124,5 +211,6 @@
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
+  
 </body>
 </html>

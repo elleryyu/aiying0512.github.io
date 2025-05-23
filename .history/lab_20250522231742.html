@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>NeuroBioInformatics Lab</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    .carousel {
+      width: 100%;
+      max-height: 300px;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 2rem;
+    }
+    .carousel-track {
+      display: flex;
+      animation: scroll 15s linear infinite;
+    }
+    .carousel:hover .carousel-track {
+      animation-play-state: paused;
+    }
+    .carousel-track img {
+      flex: 0 0 auto;
+      height: 300px;
+      object-fit: cover;
+      margin-right: 10px;
+      border-radius: 8px;
+    }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+  </style>
+</head>
+<body class="is-preload">
+
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+      <div class="inner">
+
+        <!-- Header -->
+        <header id="header">
+          <a href="index.html" class="logo"><strong>Aiying Zhang</strong></a>
+          <ul class="icons">
+            <li><a href="https://twitter.com/aiying_zhang" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="https://www.linkedin.com/in/aiying-zhang-16068212b/" class="icon brands fa fa-linkedin"><span class="label">Linkedin</span></a></li>
+            <li><a href="https://github.com/Aiying0512" class="icon brands fa-github"><span class="label">Github</span></a></li>
+          </ul>
+        </header>
+
+        <!-- Content -->
+        <section>
+          <header class="main">
+            <h1>NeuroBioInformatics Lab</h1>
+            <p><strong>Welcome to NeuroBioinformatics Lab (NBIL)</strong></p>
+          </header>
+
+          <div class="carousel">
+            <div class="carousel-track">
+              <img src="images/BME40th.jpg" alt="Photo 1" />
+              <img src="images/crawfest2016.jpg" alt="Photo 2" />
+              <img src="images/suhren.jpg" alt="Photo 3" />
+            </div>
+          </div>
+
+
+          <hr class="major" />
+          <h2>Our Mission</h2>
+          <p>[Insert lab mission here]</p>
+
+          <h2>Trainee</h2>
+          <ul class="trainee-list">
+            <li class="trainee-member">
+              <!-- Replace src with actual photo URL -->
+              <img src="lab_members/hexin.jpg" alt="Photo of Xin He" class="member-photo" width="120" height="120" />
+              <p>Xin He (Undergraduate Student, Statistics, UVA)</p>
+            </li>
+            <li class="trainee-member">
+              <img src="path/to/ruoyun_li.jpg" alt="Photo of Ruoyun Li" class="member-photo" width="120" height="120" />
+              <p>Ruoyun Li (Incoming Graduate Student, Biostatistics, Yale)</p>
+            </li>
+            <li class="trainee-member">
+              <img src="path/to/jiajia_xu.jpg" alt="Photo of Jiajia Xu" class="member-photo" width="120" height="120" />
+              <p>Jiajia Xu (Incoming Graduate Student, Biostatistics, Yale)</p>
+            </li>
+            <li class="trainee-member">
+              <img src="path/to/dongyuan_mutu.jpg" alt="Photo of Dongyuan Mutu" class="member-photo" width="120" height="120" />
+              <p>Dongyuan Mutu (Affiliation)</p>
+            </li>
+            <li class="trainee-member">
+              <img src="path/to/kurt_ji.jpg" alt="Photo of Kurt Ji" class="member-photo" width="120" height="120" />
+              <p>Kurt Ji (MCS, UVA)</p>
+            </li>
+            <li class="trainee-member">
+              <img src="path/to/weifeng_yu.jpg" alt="Photo of Weifeng Yu" class="member-photo" width="120" height="120" />
+              <p>Weifeng Yu (Research Assistant, UVA)</p>
+            </li>
+            <li class="trainee-member">
+              <img src="path/to/aroosha_solomon.jpg" alt="Photo of Aroosha Solomon" class="member-photo" width="120" height="120" />
+              <p>Aroosha Solomon (Undergraduate Student, Biology, UVA)</p>
+            </li>
+          </ul>
+          
+
+          <hr class="major" />
+          <h2>Alumni</h2>
+          <p>[Insert alumni info]</p>
+
+          <hr class="major" />
+          <h2>News</h2>
+          <p>[Insert lab news]</p>
+        </section>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+      <div class="inner">
+
+        <!-- Search -->
+        <section id="search" class="alt">
+          <form method="post" action="#">
+            <input type="text" name="query" id="query" placeholder="Search" />
+          </form>
+        </section>
+
+        <!-- Menu -->
+        <nav id="menu">
+          <header class="major">
+            <h2>Menu</h2>
+          </header>
+          <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="lab.html">Team</a></li>
+            <li><a href="generic.html">Publications</a></li>
+            <li><a href="Activities.html">Activities</a></li>
+            <li><a href="teaching.html">Teaching and Mentoring</a></li>
+            <li><a href="https://aiying0512.github.io/My_research_blog/">My Blog</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
