@@ -258,15 +258,5 @@
 				});
 
 			});
-			//Slides
-	document.addEventListener('DOMContentLoaded', function() {
-	const slides = document.querySelectorAll('.slider .slide');
-	let current = 0;
-	const interval = 5000;
-	setInterval(() => {
-	  slides[current].classList.remove('active');
-	  current = (current + 1) % slides.length;
-	  slides[current].classList.add('active');
-	}, interval);
-  });
+
 })(jQuery);
