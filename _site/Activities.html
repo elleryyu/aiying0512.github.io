@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>AZ Activities</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<style>
+			.photo-gallery {
+				width: 100%;
+				margin: 20px 0;
+				padding: 20px;
+				/* background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+				border-radius: 8px;
+				box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+			}
+
+			.gallery-title {
+				text-align: center;
+				color: #333;
+				font-size: 2.5em;
+				font-weight: bold;
+				margin-bottom: 30px;
+				text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+			}
+
+			.photo-grid {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 20px;
+				width: 100%;
+			}
+
+			.photo-item {
+				position: relative;
+				overflow: hidden;
+				border-radius: 8px;
+				box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+				aspect-ratio: 4/3; /* 保持一致的宽高比 */
+			}
+
+			.photo-item:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+			}
+
+			.photo-item img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+				transition: transform 0.3s ease;
+			}
+
+			.photo-item:hover img {
+				transform: scale(1.05);
+			}
+
+			/* 响应式设计 */
+			@media (max-width: 768px) {
+				.photo-grid {
+					grid-template-columns: repeat(2, 1fr);
+					gap: 15px;
+				}
+				
+				.gallery-title {
+					font-size: 2em;
+				}
+				
+				.photo-gallery {
+					padding: 15px;
+				}
+			}
+
+			@media (max-width: 480px) {
+				.photo-grid {
+					grid-template-columns: 1fr;
+					gap: 10px;
+				}
+				
+				.gallery-title {
+					font-size: 1.5em;
+				}
+				
+				.photo-gallery {
+					padding: 10px;
+				}
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<strong>Activities</strong>
+									<ul class="icons">
+										<li><a href="https://twitter.com/aiying_zhang" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="https://www.linkedin.com/in/aiying-zhang-16068212b/" class="icon brands fa fa-linkedin"><span class="label">Linkedin</span></a></li>
+										<li><a href="https://github.com/Aiying0512" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+								</header>
+							<!-- Banner -->
+							<section>
+								<section>
+									<header class="major">
+										<h2>Student Presentations</h2>
+									</header>
+									<div class="posts">
+
+											<article>
+												<h3>
+												  <a href="https://ww2.amstat.org/meetings/sdss/2025/">2025 Symposium on Data Science & Statistics (SDSS)</a >
+												</h3>
+												<p>
+												  April 30<br />
+												  Salt Lake City
+												</p >
+												<p>
+												  Oral Presentation by <strong>Jiajia Xu</strong><br />
+												  <em>Assessing Test-Retest Reliability of Brain Structural Connectivity from Diffusion Weighted Imaging</em>
+												</p >
+											  </article>
+
+										<article>
+											<h3> <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13411/134110V/Leverage-multimodal-neuro-imaging-and-genetics-to-identify-causal-relationship/10.1117/12.3047102.full"> SPIE Medical Imaging 2025 </a></h3>
+											<p> February 19 <br />
+												San Diego, CA, USA </p>
+											<p> Oral Presentation by <strong>Chengyan Ji</strong> <br />
+												<em>Leverage multi-modal neuro-imaging and genetics to identify causal relationship between structural and functional connectivity and ADHD with Mendelian randomization</em></p>
+										</article>
+
+										<article>
+											<h3> <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13410/134100M/Altered-hierarchical-rank-in-intrinsic-neural-time-scales-in-autism/10.1117/12.3047311.short">SPIE Medical Imaging 2025 </a></h3>
+											<p> February 19 <br />
+												San Diego, CA, USA </p>
+											<p> Oral Presentation by <strong>Aroosha Solomon</strong> <br />
+												<em>Altered hierarchical rank in intrinsic neural time‑scales in autism spectrum disorder</em></p>
+										</article>
+
+										<article>
+											<h3> <a href="https://www.uvabrainsymposium.com/"> 2024 UVA Brain Symposium </a></h3>
+											<p> May 22nd <br />
+												Charlottesville, VA, USA </p>
+											<p> Poster presentation by <strong> Kurt Ji </strong> <br />
+												<em>Unlocking the Secrets of Heritability and How Genes Influence Brain Structure and Function </em></p>
+										</article>	
+										<article>
+											<h3> <a href="https://engineering.virginia.edu/department/systems-and-information-engineering/academics/undergraduate-programs/current-undergrads/sieds"> SIEDS 2024 </a></h3>
+											<p> May 3rd <br />
+												Charlottesville, VA, USA </p>
+											<p> Oral presentation by <strong>Dongyuan Mutu</strong> <br />
+												<em>Associations Between Brain Connectivity and Psychiatric Symptoms in Children: Insights into Adolescent Mental Health </em></p>
+										</article>
+										
+
+									</div>
+								</section>
+														
+								<header class="main">
+									<h2>Cheering Moment</h2> 
+									<div class="photo-gallery">
+										<div class="photo-grid">
+											<div class="photo-item">
+												<img src="images/lab_gathering/SPIE_25/cuisine_at_SD.jpg" alt="Photo 1" />
+											</div>
+											<div class="photo-item">
+												<img src="images/lab_gathering/SPIE_25/Night_SPIE_SD.jpg" alt="Photo 2" />
+											</div>
+											<div class="photo-item">
+												<img src="images/lab_gathering/SPIE_25/SD_by_the_sea.jpg" alt="Photo 3" />
+											</div>
+											<div class="photo-item">
+												<img src="images/lab_gathering/lab_01.JPG" alt="Photo 4" />
+											</div>
+										</div>
+									</div>
+								</header>
+							</section>
+							<!-- Content -->
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="lab.html">Team</a></li>
+										<li><a href="generic.html">Publications</a></li>
+										<li><a href="Activities.html">Activities</a></li>
+										<!-- <li><a href="teaching.html">Teaching and Mentoring</a></li>
+										<li><a href="https://aiying0512.github.io/My_research_blog/">My Blog</a></li> -->
+									  </ul>
+								</nav>
+
+							<!-- Section -->
+								
+
+							<!-- Section -->
+								
+
+							<!-- Footer -->
+								
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
