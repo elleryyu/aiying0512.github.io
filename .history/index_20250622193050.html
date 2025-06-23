@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>NeuroBioInformatics Lab (NBIL)</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    /* Hero / Banner */
+    #banner {
+      background-image: url('images/banner.jpg'); /* replace with your banner image */
+      background-size: cover;
+      background-position: center;
+      padding: 6rem 2rem;
+      color: #fff;
+      text-align: center;
+    }
+    #banner h1 {
+      font-size: 3rem;
+      margin: 0 0 1rem;
+    }
+    #banner p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+
+    /* Research Topics section */
+    .research-section {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: #f5f5f5;
+      border-radius: 5px;
+    }
+    .research-section .major h2 {
+      margin-bottom: 1rem;
+    }
+    .research-section p.description {
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+      color: #333;
+    }
+    .topic-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .topic-item {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .topic-item h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+      color: #007bff;
+    }
+    .topic-item p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    /* News styles */
+    .news-container {
+      max-height: 300px;
+      overflow-y: auto;
+      padding: 10px;
+      border: 1px solid #ddd;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+    }
+    .news-item {
+      margin-bottom: 15px;
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+    .news-item h4 {
+      margin: 0 0 5px;
+      font-size: 1.1em;
+      color: #333;
+    }
+    .news-item p {
+      margin: 0;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    /* Quick Links / Features */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .features article {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .features article h3 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      color: #007bff;
+    }
+    .features article p {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.4;
+    }
+    .features article a.button {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: #007bff;
+      color: #fff;
+      border-radius: 3px;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .features article a.button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body class="is-preload">
+  <!-- Wrapper -->
+  <div id="wrapper">
+    <!-- Main -->
+    <div id="main">
+      <div class="inner">
+        <!-- Banner / Hero -->
+        <section id="banner">
+          <h1>NeuroBioInformatics Lab (NBIL)</h1>
+          <p>
+            Advancing mental health data science: developing statistical and computational approaches 
+            leveraging multi-modal imaging and genetics to understand typical and atypical brain development.
+          </p>
+        </section>
+
+        <!-- Research Topics -->
+        <section class="research-section">
+          <header class="major">
+            <h2>Research Topics</h2>
+          </header>
+          <p class="description">
+            Our research is in the field of mental health data science, focusing on statistical and computational methods 
+            that integrate multi-modal imaging and genetics to explore brain development and psychiatric disorders.
+          </p>
+          <div class="topic-list">
+            <div class="topic-item">
+              <h3>Graphical Models</h3>
+              <p>Directed &amp; Undirected modeling for network analysis</p>
+            </div>
+            <div class="topic-item">
+              <h3>Machine Learning in Neuroscience</h3>
+              <p>Statistical and deep learning methods for neural data analysis</p>
+            </div>
+            <div class="topic-item">
+              <h3>Multimodal Fusion</h3>
+              <p>Combining MRI, DTI, fMRI, MEG, and genetics data</p>
+            </div>
+            <div class="topic-item">
+              <h3>Data Types</h3>
+              <p>MRI, DTI, fMRI, MEG, SNPs, DNA methylation</p>
+            </div>
+            <div class="topic-item">
+              <h3>Psychiatric Diseases</h3>
+              <p>Schizophrenia, Alzheimer’s disease, Obsessive-Compulsive Disorder, ADHD, etc.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- News -->
+        <section>
+          <div class="content">
+            <header class="major">
+              <h2>News</h2>
+            </header>
+            <div class="news-container">
+              <!-- Example items; replace with real news -->
+              <div class="news-item">
+                <h4>Apr 28, 2025</h4>
+                <p>Xin He has been selected as a UVA TYDE Undergraduate Summer Research Fellow. Congratulations to Xin!</p>
+              </div>
+              <div class="news-item">
+                <h4>Mar 27, 2025</h4>
+                <p>Our paper was accepted by Medical Imaging with Deep Learning (MIDL) for poster presentation. Congratulations to Ellery!</p>
+              </div>
+              <div class="news-item">
+                <h4>Mar 25, 2025</h4>
+                <p>Paper "Integrated Brain Connectivity Analysis with fMRI, DTI, and sMRI Powered by Interpretable Graph Neural Networks" accepted by Medical Image Analysis. <a href="https://www.sciencedirect.com/science/article/pii/S1361841525001173">Preprint</a></p>
+              </div>
+              <!-- Add more items as needed -->
+            </div>
+          </div>
+        </section>
+
+        <!-- Quick Links -->
+        <section>
+          <header class="major">
+            <h2>Explore</h2>
+          </header>
+          <div class="features">
+            <article>
+              <h3>Team</h3>
+              <p>Meet our PI, students, and collaborators.</p>
+              <a href="lab.html" class="button">View Team</a>
+            </article>
+            <article>
+              <h3>Publications</h3>
+              <p>Browse our recent papers and preprints.</p>
+              <a href="publications.html" class="button">View Publications</a>
+            </article>
+            <article>
+              <h3>Activities</h3>
+              <p>See talks, workshops, and symposiums.</p>
+              <a href="activities.html" class="button">View Activities</a>
+            </article>
+            <article>
+              <h3>Contact</h3>
+              <p>Get in touch with the lab or apply for positions.</p>
+              <a href="contact.html" class="button">Contact Us</a>
+            </article>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+      <div class="inner">
+        <!-- Logo & Title -->
+        <section id="header">
+          <a href="index.html" class="logo"><strong>NBIL</strong></a>
+        </section>
+
+        <!-- Search (optional) -->
+        <section id="search" class="alt">
+          <form method="post" action="#">
+            <input type="text" name="query" id="query" placeholder="Search" />
+          </form>
+        </section>
+
+        <!-- Menu -->
+        <nav id="menu">
+          <header class="major">
+            <h2>Menu</h2>
+          </header>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lab.html">Team</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="teaching.html">Teaching &amp; Mentoring</a></li>
+            <li><a href="https://aiying0512.github.io/My_research_blog/">Blog</a></li>
+          </ul>
+        </nav>
+
+        <!-- Social Icons -->
+        <section>
+          <header class="major">
+            <h2>Follow</h2>
+          </header>
+          <ul class="icons">
+            <li><a href="https://twitter.com/aiying_zhang" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="https://www.linkedin.com/in/aiying-zhang-16068212b/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            <li><a href="https://github.com/Aiying0512" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+          </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+          <p class="copyright">&copy; 2025 NeuroBioInformatics Lab. All rights reserved.</p>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

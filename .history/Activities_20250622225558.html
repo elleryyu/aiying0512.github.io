@@ -13,88 +13,105 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 
 		<style>
-			.photo-gallery {
-				width: 100%;
-				margin: 20px 0;
-				padding: 20px;
-				/* background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
-				border-radius: 8px;
-				box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-			}
-
-			.gallery-title {
-				text-align: center;
-				color: #333;
-				font-size: 2.5em;
-				font-weight: bold;
-				margin-bottom: 30px;
-				text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
-			}
-
-			.photo-grid {
-				display: grid;
-				grid-template-columns: repeat(2, 1fr);
-				gap: 20px;
-				width: 100%;
-			}
-
-			.photo-item {
+			.carousel {
 				position: relative;
-				overflow: hidden;
-				border-radius: 8px;
-				box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-				transition: transform 0.3s ease, box-shadow 0.3s ease;
-				aspect-ratio: 4/3; /* 保持一致的宽高比 */
-			}
-
-			.photo-item:hover {
-				transform: translateY(-5px);
-				box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-			}
-
-			.photo-item img {
+				z-index: 1;
 				width: 100%;
-				height: 100%;
-				object-fit: cover;
-				object-position: center;
-				transition: transform 0.3s ease;
+				height: 100vh; /* 增加到全屏高度 */
+				overflow: hidden;
+				margin: 0;
+				padding: 0;
+				border-radius: 8px; /* 添加圆角 */
+				box-shadow: 0 4px 20px rgba(0,0,0,0.1); /* 添加阴影 */
+				background: #000; /* 添加黑色背景填充空白区域 */
 			}
-
-			.photo-item:hover img {
+	
+			.carousel-track {
+				display: flex;
+				flex-wrap: nowrap;
+				animation: scroll 30s linear infinite;
+				width: fit-content;
+				height: 100%;
+			}
+	
+			.carousel-track img {
+				width: auto; /* 让宽度自适应以保持比例 */
+				height: 100%; /* 高度填满容器 */
+				min-width: 600px; /* 增加最小宽度让照片更大 */
+				max-width: 1000px; /* 增加最大宽度 */
+				object-fit: cover; /* 改回cover以填满容器并去掉空白 */
+				object-position: center; /* 居中显示图片 */
+				flex-shrink: 0;
+				margin: 0; /* 去掉间距让图片连续 */
+				padding: 0;
+				border-radius: 0; /* 去掉圆角保持连续性 */
+				transition: transform 0.3s ease; /* 添加过渡效果 */
+			}
+	
+			/* 鼠标悬停时稍微放大 */
+			.carousel:hover .carousel-track {
+				animation-play-state: paused;
+			}
+	
+			.carousel-track img:hover {
 				transform: scale(1.05);
 			}
-
+	
+			.overlay-title {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				color: white;
+				font-size: 3em;
+				font-weight: bold;
+				text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+				z-index: 10;
+				text-align: center;
+				background: rgba(0,0,0,0.3); /* 添加半透明背景 */
+				padding: 20px 40px;
+				border-radius: 10px;
+				backdrop-filter: blur(5px); /* 添加模糊效果 */
+			}
+	
+			@keyframes scroll {
+				0% { transform: translateX(0); }
+				100% { transform: translateX(-50%); }
+			}
+	
 			/* 响应式设计 */
 			@media (max-width: 768px) {
-				.photo-grid {
-					grid-template-columns: repeat(2, 1fr);
-					gap: 15px;
+				.carousel {
+					height: 80vh; /* 平板设备高度 */
 				}
 				
-				.gallery-title {
+				.carousel-track img {
+					min-width: 500px;
+					max-width: 800px;
+				}
+				
+				.overlay-title {
 					font-size: 2em;
-				}
-				
-				.photo-gallery {
-					padding: 15px;
+					padding: 15px 25px;
 				}
 			}
-
+	
 			@media (max-width: 480px) {
-				.photo-grid {
-					grid-template-columns: 1fr;
-					gap: 10px;
+				.carousel {
+					height: 70vh; /* 手机端高度 */
 				}
 				
-				.gallery-title {
+				.carousel-track img {
+					min-width: 400px;
+					max-width: 600px;
+				}
+				
+				.overlay-title {
 					font-size: 1.5em;
-				}
-				
-				.photo-gallery {
-					padding: 10px;
+					padding: 10px 20px;
 				}
 			}
-		</style>
+			</style>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -115,6 +132,29 @@
 								</header>
 							<!-- Banner -->
 							<section>
+								<header class="main">
+									<h2>Cheering Moment</h2> 
+									<div class="carousel">
+										<h2 class="overlay-title">Cheering Moment</h2>
+										<div class="carousel-track">
+											
+											如果你要使用实际图片，请使用以下格式：
+											<img src="images/lab_gathering/SPIE_25/cuisine_at_SD.jpg" alt="Photo 1" />
+											<img src="images/lab_gathering/SPIE_25/Night_SPIE_SD.jpg" alt="Photo 2" />
+											<img src="images/lab_gathering/SPIE_25/SD_by_the_sea.jpg" alt="Photo 3" />
+											<img src="images/lab_gathering/lab_01.JPG" alt="Photo 4" />
+											<img src="images/lab_gathering/SPIE_25/cuisine_at_SD.jpg" alt="Photo 1" />
+											<img src="images/lab_gathering/SPIE_25/Night_SPIE_SD.jpg" alt="Photo 2" />
+											<img src="images/lab_gathering/SPIE_25/SD_by_the_sea.jpg" alt="Photo 3" />
+											<img src="images/lab_gathering/lab_01.JPG" alt="Photo 4" />
+											
+										</div>
+									</div>
+								</header>
+							</section>
+							<!-- Content -->
+								
+
 								<section>
 									<header class="major">
 										<h2>Student Presentations</h2>
@@ -169,28 +209,11 @@
 
 									</div>
 								</section>
-														
-								<header class="main">
-									<h2>Cheering Moment</h2> 
-									<div class="photo-gallery">
-										<div class="photo-grid">
-											<div class="photo-item">
-												<img src="images/lab_gathering/SPIE_25/cuisine_at_SD.jpg" alt="Photo 1" />
-											</div>
-											<div class="photo-item">
-												<img src="images/lab_gathering/SPIE_25/Night_SPIE_SD.jpg" alt="Photo 2" />
-											</div>
-											<div class="photo-item">
-												<img src="images/lab_gathering/SPIE_25/SD_by_the_sea.jpg" alt="Photo 3" />
-											</div>
-											<div class="photo-item">
-												<img src="images/lab_gathering/lab_01.JPG" alt="Photo 4" />
-											</div>
-										</div>
-									</div>
-								</header>
-							</section>
-							<!-- Content -->
+							       
+					        
+
+										
+
 						</div>
 					</div>
 
@@ -242,3 +265,4 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
+</html>

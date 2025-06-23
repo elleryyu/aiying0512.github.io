@@ -1,0 +1,320 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>NeuroBioInformatics Lab (NBIL)</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    /* === Highlights Carousel === */
+    .promo-section {
+      margin-top: 2rem;
+    }
+    .promo-section .major h2 {
+      margin-bottom: 1rem;
+    }
+    .promo-carousel {
+      width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+      padding-bottom: 1rem;
+      box-sizing: border-box;
+    }
+    .promo-carousel::-webkit-scrollbar {
+      height: 8px;
+    }
+    .promo-carousel::-webkit-scrollbar-thumb {
+      background-color: rgba(0,0,0,0.2);
+      border-radius: 4px;
+    }
+    .promo-carousel::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .promo-item {
+      display: inline-block;
+      vertical-align: top;
+      width: 400px;
+      margin-right: 12px;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    .promo-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+    @media (max-width: 1200px) {
+      .promo-item {
+        width: 35vw;
+        max-width: 350px;
+      }
+      .promo-item img {
+        height: calc((35vw) * 250 / 400);
+      }
+    }
+    @media (max-width: 800px) {
+      .promo-item {
+        width: 300px;
+      }
+      .promo-item img {
+        height: 190px;
+      }
+    }
+    @media (max-width: 500px) {
+      .promo-item {
+        width: 250px;
+        margin-right: 8px;
+      }
+      .promo-item img {
+        height: 160px;
+      }
+    }
+
+    /* === Research Topics Section === */
+    .research-section {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: #f5f5f5;
+      border-radius: 5px;
+    }
+    .research-section .major h2 {
+      margin-bottom: 1rem;
+    }
+    .research-section p.description {
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+      color: #333;
+    }
+    .topic-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .topic-item {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .topic-item h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+      color: #007bff;
+    }
+    .topic-item p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.4;
+    }
+    @media (max-width: 600px) {
+      .research-section {
+        padding: 0.5rem;
+      }
+      .topic-item h3 {
+        font-size: 1rem;
+      }
+    }
+
+    /* === News Section === */
+    .news-section {
+      margin-top: 2rem;
+    }
+    .news-section .major h2 {
+      margin-bottom: 1rem;
+    }
+    .news-container {
+      max-height: 300px;
+      overflow-y: auto;
+      padding: 10px;
+      border: 1px solid #ddd;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+    }
+    .news-item {
+      margin-bottom: 15px;
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+    .news-item h4 {
+      margin: 0 0 5px;
+      font-size: 1.1em;
+      color: #333;
+    }
+    .news-item p {
+      margin: 0;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    /* === Contact Section === */
+    .contact-section {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: #eef5ff;
+      border-radius: 5px;
+    }
+    .contact-section .major h2 {
+      margin-bottom: 1rem;
+    }
+    .contact-section p {
+      margin: 0.5rem 0;
+      color: #333;
+      line-height: 1.5;
+    }
+    .contact-section a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .contact-section a:hover {
+      text-decoration: underline;
+    }
+
+    /* Optional: adjust main-inner padding */
+    #main .inner {
+      padding: 1rem;
+    }
+    /* Sidebar styles remain unchanged */
+  </style>
+</head>
+<body class="is-preload">
+  <!-- Wrapper -->
+  <div id="wrapper">
+    <!-- Main -->
+    <div id="main">
+      <div class="inner">
+        <!-- Header / Logo -->
+        <header id="header">
+          <a href="index.html" class="logo"><strong>NeuroBioInformatics Lab (NBIL)</strong></a>
+          <ul class="icons">
+            <li><a href="https://twitter.com/aiying_zhang" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="https://www.linkedin.com/in/aiying-zhang-16068212b/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            <li><a href="https://github.com/Aiying0512" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+          </ul>
+        </header>
+
+        <!-- Highlights Carousel -->
+        <section class="promo-section">
+          <header class="major"><h2>Highlights</h2></header>
+          <div class="promo-carousel">
+            <a href="https://your-link-1.com" class="promo-item">
+              <img src="images/promo1.jpg" alt="Highlight 1">
+            </a>
+            <a href="https://your-link-2.com" class="promo-item">
+              <img src="images/promo2.jpg" alt="Highlight 2">
+            </a>
+            <a href="https://your-link-3.com" class="promo-item">
+              <img src="images/promo3.jpg" alt="Highlight 3">
+            </a>
+            <!-- Add more promo-item as needed -->
+          </div>
+        </section>
+
+        <!-- Research Topics Section -->
+        <section class="research-section">
+          <header class="major"><h2>Research Topics</h2></header>
+          <p class="description">
+            Our research is in the field of mental health data science, focusing on developing statistical and computational approaches leveraging multi-modal imaging and genetics to understand typical and atypical brain development.
+          </p>
+          <div class="topic-list">
+            <div class="topic-item">
+              <h3>Graphical Models</h3>
+              <p>Directed &amp; Undirected modeling for network analysis</p>
+            </div>
+            <div class="topic-item">
+              <h3>Machine Learning in Neuroscience</h3>
+              <p>Statistical and deep learning methods for neural data analysis</p>
+            </div>
+            <div class="topic-item">
+              <h3>Multimodal Fusion</h3>
+              <p>Combining MRI, DTI, fMRI, MEG, and genetics data</p>
+            </div>
+            <div class="topic-item">
+              <h3>Data Types</h3>
+              <p>MRI, DTI, fMRI, MEG, SNPs, DNA methylation</p>
+            </div>
+            <div class="topic-item">
+              <h3>Psychiatric Diseases</h3>
+              <p>Schizophrenia, Alzheimer’s disease, Obsessive-Compulsive Disorder, etc.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- News Section -->
+        <section class="news-section">
+          <header class="major"><h2>News</h2></header>
+          <div class="news-container">
+            <div class="news-item">
+              <h4>Apr 28, 2025</h4>
+              <p>Xin He has been selected as a UVA TYDE Undergraduate Summer Research Fellow. Congratulations to Xin!</p>
+            </div>
+            <div class="news-item">
+              <h4>Mar 27, 2025</h4>
+              <p>Our paper was accepted by Medical Imaging with Deep Learning (MIDL) for poster presentation. Congratulations to Ellery!</p>
+            </div>
+            <div class="news-item">
+              <h4>Mar 25, 2025</h4>
+              <p>Paper "Integrated Brain Connectivity Analysis with fMRI, DTI, and sMRI Powered by Interpretable Graph Neural Networks" accepted by Medical Image Analysis. <a href="https://www.sciencedirect.com/science/article/pii/S1361841525001173">Preprint</a></p>
+            </div>
+            <!-- Add more news-item blocks as needed -->
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+          <header class="major"><h2>Contact</h2></header>
+          <p>Email: <a href="mailto:aiying.zhang@virginia.edu">aiying.zhang@virginia.edu</a></p>
+          <p>Address: Department of Data Science, University of Virginia</p>
+          <!-- Add more contact details if needed -->
+        </section>
+
+      </div>
+    </div>
+
+    <!-- Sidebar: keep unchanged, but remove any Contact link -->
+    <div id="sidebar">
+      <div class="inner">
+        <section id="search" class="alt">
+          <form method="post" action="#">
+            <input type="text" name="query" id="query" placeholder="Search" />
+          </form>
+        </section>
+        <nav id="menu">
+          <header class="major"><h2>Menu</h2></header>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lab.html">Team</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="teaching.html">Teaching &amp; Mentoring</a></li>
+            <li><a href="https://aiying0512.github.io/My_research_blog/">Blog</a></li>
+          </ul>
+        </nav>
+        <section>
+          <header class="major"><h2>Follow</h2></header>
+          <ul class="icons">
+            <li><a href="https://twitter.com/aiying_zhang" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="https://www.linkedin.com/in/aiying-zhang-16068212b/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            <li><a href="https://github.com/Aiying0512" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+          </ul>
+        </section>
+        <footer id="footer">
+          <p>&copy; 2025 NeuroBioInformatics Lab. All rights reserved.</p>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

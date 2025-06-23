@@ -2397,25 +2397,29 @@ button,
 }
 .intro-container .slider {
   width: 100%;
-  height: 60vh;       
-  max-height: 700px;  
+  height: 60vh;       /* 占视口高度60% */
+  max-height: 700px;  /* 最大高度，可根据需要调整 */
   overflow: hidden;
   position: relative;
 }
 
-
+/* 让每个 slide 填满容器高度 */
 .intro-container .slider .slide,
 .intro-container .slider .slide img {
   height: 100%;
 }
 
-
+/* 图片填充并裁剪，多余部分隐藏 */
 .intro-container .slider .slide img {
-  width: auto;        
+  width: auto;        /* 横向可根据需要改为100% */
   object-fit: cover;
   display: block;
 }
 
+/* 如果想横向铺满，可改为 width:100%；保持比例视具体图片决定 */
+/* .intro-container .slider .slide img { width: 100%; object-fit: cover; } */
+
+/* 响应式：小屏略降低高度 */
 @media (max-width: 1024px) {
   .intro-container .slider {
     height: 50vh;
