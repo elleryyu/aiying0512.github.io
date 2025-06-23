@@ -1,1 +1,5 @@
 theme: jekyll-theme-architect
+title: NBIL Lab
+description: NBIL Official Website
+url: "https://elleryyu.github.io"    
+baseurl: "/NBIL.github.io"     
